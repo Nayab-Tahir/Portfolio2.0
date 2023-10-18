@@ -3,7 +3,7 @@ import './Ruler.css';
 const Ruler = () => {
   const lines = [];
 
-  for(let i=1; i<=36; i++){
+  for(let i=1; i<=50; i++){
     lines.push(i);
   }
   

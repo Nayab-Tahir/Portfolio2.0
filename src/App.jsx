@@ -1,18 +1,12 @@
 import './App.css'
-import Ruler from './components/Ruler';
+import Ruler from './components/Ruler/Ruler';
+import Header from './components/Header/Header';
 
 export default function App() {
   return (
     <>
       <Ruler />
-      <header>
-        <div className="header-div">
-          <div className="header-container">
-            <div>1</div>
-            <div>2</div>
-          </div>
-        </div>
-      </header>
+      <Header />
     </>
   );
 };
