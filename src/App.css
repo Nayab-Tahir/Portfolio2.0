@@ -4,17 +4,24 @@
   line-height: 2em;
   font-size: 21px;
   color: #7A7A7A;
+  background-color: #292929;
   /* color: #54595F; */ 
 }
 
 header {
   display: flex;
   justify-content: center;
-  width: 100%;
-  background-color: #292929;
+  width: 94.2vw;
+  margin: 0 2.9vw;
 }
 
 .header-div{
-  width: 95%;
-  height: 30vh;
+  width: 100%;
+  padding: 0 1.84vw;
+  height: 28.25vh;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
 }

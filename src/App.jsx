@@ -6,7 +6,12 @@ export default function App() {
     <>
       <Ruler />
       <header>
-        <div className="header-div">Helooo</div>
+        <div className="header-div">
+          <div className="header-container">
+            <div>1</div>
+            <div>2</div>
+          </div>
+        </div>
       </header>
     </>
   );
