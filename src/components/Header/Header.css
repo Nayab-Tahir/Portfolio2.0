@@ -3,6 +3,7 @@ header {
   justify-content: center;
   width: 94.2vw;
   margin: 0 2.9vw;
+  z-index: 9;
 }
 
 .header-div {
@@ -33,12 +34,12 @@ header {
 
 .start > .intro > .name {
   color: white;
-  font-size: 1.6vw;
+  font-size: 24px;
 }
 
 .start > .intro > .career {
   color: #9a99ff;
-  font-size: 1.5vw;
+  font-size: 22px;
   letter-spacing: 3px;
   text-align: end;
 }
