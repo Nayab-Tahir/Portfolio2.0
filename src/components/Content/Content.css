@@ -1,0 +1,57 @@
+.content-page {
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .content-div{
+    margin: 0 4%;
+    padding-top: 10%;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section {
+    text-align: center;
+    padding-top: 2%;
+  }
+  
+  .greetings {
+    margin-bottom: 20px;
+  }
+  
+  .greetings > h6 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.15vw;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .section > .career {
+    margin-bottom: 40px;
+  }
+  
+  .career-content {
+    color: #e6db74;
+    font-size: 8vw;
+    line-height: 0.8em;
+  }
+  
+  .career-braces {
+    color: white;
+    font-size: 8vw;
+    line-height: 0.8em;
+  }
+  
+  .arrow > h5 {
+    margin: 0;
+    color: white;
+    font-size: 2vw;
+    transform: rotate(90deg);
+    background: none;
+  }
