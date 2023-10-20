@@ -1,4 +1,5 @@
 import "./Header.css";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
@@ -11,18 +12,7 @@ const Header = () => {
               <div className="career">web_dev</div>
             </div>
           </div>
-          <div className="end">
-              <nav>
-                <ul>
-                    <li>_home</li>
-                    <li>_about</li>
-                    <li>_portfolio</li>
-                    <li>_services</li>
-                    <li>_resume</li>
-                    <li>_contact</li>
-                </ul>
-              </nav>
-          </div>
+          <Navigation />
         </div>
       </div>
     </header>

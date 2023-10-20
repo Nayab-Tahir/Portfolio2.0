@@ -1,5 +1,5 @@
 .terminal-div {
-    height: 420px;
+    height: 418px;
     display: flex;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -46,10 +46,9 @@
   .terminal {
     height: 100%;
     width: 60%;
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
     display: flex;
     flex-direction: column;
-    /* border-radius: 12px; */
   }
   
   .terminal-head{

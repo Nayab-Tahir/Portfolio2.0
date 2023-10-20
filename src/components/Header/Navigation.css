@@ -1,0 +1,30 @@
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-items-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+  text-decoration: none;
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 22px;
+  color: #e6db74;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+li:hover{
+    color: #9a99ff;
+}
+
+.selected{
+    color: #2fcbef;
+}

@@ -1,0 +1,51 @@
+.greetings {
+    margin-bottom: 20px;
+  }
+  
+  .greetings > h6 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.15vw;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .section > .career {
+    margin-bottom: 40px;
+  }
+  
+  .career-content, .cursor {
+    color: #e6db74;
+    font-size: 8vw;
+    line-height: 0.8em;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .cursor {
+    animation: blink 0.8s infinite;
+  }
+  
+  .career-braces {
+    color: white;
+    font-size: 8vw;
+    line-height: 0.8em;
+  }
+  
+  .arrow > h5 {
+    margin: 0;
+    color: white;
+    font-size: 2vw;
+    transform: rotate(90deg);
+    background: none;
+  }
