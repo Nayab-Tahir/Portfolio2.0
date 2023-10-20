@@ -7,3 +7,19 @@
   background-color: rgb(33, 33, 33);
   -webkit-font-smoothing: antialiased;
 }
+
+/* .background-pic {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+}
+
+.background-pic > img {
+  width: 100%;
+} */
