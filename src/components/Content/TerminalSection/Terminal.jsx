@@ -1,5 +1,6 @@
 import "./Terminal.css";
 import Instruction from "./Instruction";
+import Section from "../../../UI/Section";
 
 const Terminal = () => {
   const instructions = [
@@ -46,7 +47,7 @@ const Terminal = () => {
   ];
 
   return (
-    <div className="section">
+    <Section>
       <div className="terminal-div">
         <div className="terminal">
           <div className="terminal-head">Terminal</div>
@@ -62,7 +63,7 @@ const Terminal = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -1,14 +1,19 @@
+import Terminal from "./TerminalSection/Terminal";
+import IntroSection from "./IntroSection/IntroSection";
+import Module from "../../UI/Module";
+import AboutSection from "./AboutSection/AboutSection";
 import "./Content.css";
-import Terminal from "./Terminal/Terminal";
-import IntroSection from "./IntroSection";
 
 const Content = () => {
   return (
       <div className="content-page">
-        <div className="content-div">
+        <Module>
           <IntroSection />
           <Terminal />
-        </div>
+        </Module>
+        <Module styleClass="about-module">
+          <AboutSection />
+        </Module>
       </div>
   );
 };

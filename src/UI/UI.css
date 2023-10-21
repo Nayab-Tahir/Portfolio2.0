@@ -1,0 +1,12 @@
+.module {
+  margin: 0 4%;
+  padding-top: 10%;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  text-align: center;
+  margin-top: 2%;
+}

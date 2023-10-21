@@ -1,5 +1,6 @@
-import useTextAnimation from "../../Hooks/useTextAnimation";
+import useTextAnimation from "../../../Hooks/useTextAnimation";
 import "./IntroSection.css";
+import Section from "../../../UI/Section";
 
 const careerList = ["_software engineer", "_web developer", "_data scientist"];
 
@@ -7,7 +8,7 @@ const IntroSection = () => {
   const career = useTextAnimation(careerList);
 
   return (
-    <div className="section">
+    <Section>
       <div className="greetings">
         <h6>// hi, i'm nayab tahir, a...</h6>
       </div>
@@ -19,7 +20,7 @@ const IntroSection = () => {
       <div className="arrow">
         <h5>==&gt;</h5>
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -21,7 +21,7 @@ li {
   letter-spacing: 0.5px;
 }
 
-li:hover{
+li:not(.selected):hover{
     color: #9a99ff;
 }
 
