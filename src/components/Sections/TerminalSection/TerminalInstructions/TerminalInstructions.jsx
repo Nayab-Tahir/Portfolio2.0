@@ -1,8 +1,6 @@
-import "./Terminal.css";
 import Instruction from "./Instruction";
-import Section from "../../../UI/Section";
 
-const Terminal = () => {
+const TerminalInstructions = () => {
   const instructions = [
     {
       num: 1,
@@ -47,24 +45,16 @@ const Terminal = () => {
   ];
 
   return (
-    <Section>
-      <div className="terminal-div">
-        <div className="terminal">
-          <div className="terminal-head">Terminal</div>
-          <div className="terminal-body">nayabtahir ~ %&nbsp;|</div>
-        </div>
-        <div className="terminal-instructions">
-          {instructions.map((inst) => (
-            <Instruction
-              num={inst.num}
-              title={inst.title}
-              description={inst.description}
-            />
-          ))}
-        </div>
-      </div>
-    </Section>
+    <div className="terminal-instructions">
+      {instructions.map((inst) => (
+        <Instruction
+          num={inst.num}
+          title={inst.title}
+          description={inst.description}
+        />
+      ))}
+    </div>
   );
 };
 
-export default Terminal;
+export default TerminalInstructions;
