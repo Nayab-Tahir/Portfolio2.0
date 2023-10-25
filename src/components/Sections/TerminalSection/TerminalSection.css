@@ -65,8 +65,7 @@
   border-radius: 8px 8px 0 0;
 }
 
-.terminal-body {
-  /* flex-grow: 1; */
+.terminal-body-line {
   padding-left: 4px;
   display: flex;
 }
@@ -89,4 +88,15 @@
   width: 100%;
   caret-color: #9a99ff;
   color: white;
+}
+
+.terminal-body-output {
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.terminal-body-output > div {
+  color: #2fcbef;
 }
