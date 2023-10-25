@@ -15,8 +15,13 @@ const Terminal = () => {
     if (e.key === "Enter") {
       setCommand("");
       if (e.target.value === "ls") {
-        setTerminalLinesList((prevList) => [...prevList, {'outputList': listDir}]
-        );
+        setTerminalLinesList((prevList) => [
+          ...prevList,
+          { command: e.target.value, outputList: listDir },
+        ]);
+      }
+      else if(e.target.value === "clear"){
+        setTerminalLinesList([]);
       }
     }
   };
@@ -24,6 +29,21 @@ const Terminal = () => {
   return (
     <div className="terminal">
       <div className="terminal-head">Terminal</div>
+      {terminalLinesList.map((line) => (
+        <>
+          <div className="terminal-body-line">
+            <div className="terminal-body-title">nayabtahir ~ %&nbsp;</div>
+            <div className="terminal-executed-command">{line['command']}</div>
+          </div>
+          <div className="terminal-body-line">
+            <div className="terminal-body-output">
+              {line["outputList"].map((output) => (
+                <div>{output}</div>
+              ))}
+            </div>
+          </div>
+        </>
+      ))}
       <div className="terminal-body-line">
         <div className="terminal-body-title">nayabtahir ~ %&nbsp;</div>
         <div className="terminal-body-command-container">
@@ -37,15 +57,6 @@ const Terminal = () => {
           />
         </div>
       </div>
-      {terminalLinesList.map((line) => (
-        <div className="terminal-body-line">
-          <div className="terminal-body-output">
-            {line['outputList'].map((output) => (
-              <div>{output}</div>
-            ))}
-          </div>
-        </div>
-      ))}
     </div>
   );
 };
