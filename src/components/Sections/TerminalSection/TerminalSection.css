@@ -55,6 +55,7 @@
   border-left: 1px solid rgba(255, 255, 255, 0.012);
   display: flex;
   flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.05);
 }
 
 .terminal-head {
@@ -65,9 +66,27 @@
 }
 
 .terminal-body {
+  /* flex-grow: 1; */
+  padding-left: 4px;
+  display: flex;
+}
+
+.terminal-body-title{
   text-align: start;
   color: #9a99ff;
-  background-color: rgb(0, 0, 0, 0.05);
-  flex-grow: 1;
-  padding-left: 4px;
+}
+
+.terminal-body-command-container {
+  flex: 1;
+}
+
+#command {
+  margin: 0;
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  caret-color: #9a99ff;
+  color: white;
 }
