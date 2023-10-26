@@ -68,15 +68,18 @@
 .terminal-body-line {
   padding-left: 4px;
   display: flex;
+  background: none;
 }
 
 .terminal-body-title{
   text-align: start;
   color: #9a99ff;
+  background: none;
 }
 
 .terminal-body-command-container {
   flex: 1;
+  background: none;
 }
 
 #command {
@@ -95,12 +98,15 @@
   width: 100%;
   padding: 0 10px;
   justify-content: space-between;
+  background: none;
 }
 
 .terminal-body-output > div {
   color: #2fcbef;
+  background: none;
 }
 
 .terminal-executed-command {
   color: #e6db74;
+  background: none;
 }

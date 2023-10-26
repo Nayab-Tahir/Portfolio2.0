@@ -22,7 +22,7 @@ const Terminal = () => {
         case "ls":
           setTerminalLinesList((prevList) => [
             ...prevList,
-            { command: currCmd, outputList: listDir[dir] },
+            { command: currCmd, path: dir, outputList: listDir[dir] },
           ]);
           break;
         case "clear":
@@ -34,14 +34,20 @@ const Terminal = () => {
             setDir(paramDir);
             setTerminalLinesList((prevList) => [
               ...prevList,
-              { command: currCmd + " " + paramDir, outputList: [] },
+              { command: currCmd + " " + paramDir, path: dir, outputList: [] },
             ]);
           }
+          break;
+        case "":
+          setTerminalLinesList((prevList) => [
+            ...prevList,
+            { command: currCmd, path: dir, outputList: [] },
+          ]);
           break;
         default:
           setTerminalLinesList((prevList) => [
             ...prevList,
-            { command: currCmd, outputList: ["\'" + currCmd + "\' is not a valid command"] },
+            { command: currCmd, path: dir, outputList: ["\'" + currCmd + "\' is not a valid command"] },
           ]);
           break;
       }
@@ -54,7 +60,7 @@ const Terminal = () => {
       {terminalLinesList.map((line) => (
         <>
           <div className="terminal-body-line">
-            <div className="terminal-body-title">nayabtahir ~ %&nbsp;</div>
+            <div className="terminal-body-title">nayabtahir ~ {line["path"]} %&nbsp;</div>
             <div className="terminal-executed-command">{line['command']}</div>
           </div>
           <div className="terminal-body-line">
@@ -67,7 +73,7 @@ const Terminal = () => {
         </>
       ))}
       <div className="terminal-body-line">
-        <div className="terminal-body-title">nayabtahir ~ %&nbsp;</div>
+        <div className="terminal-body-title">nayabtahir ~ {dir} %&nbsp;</div>
         <div className="terminal-body-command-container">
           <input
             type="text"
