@@ -1,11 +1,14 @@
 import { useState } from "react";
 
-const commandList = ["ls", "cd"];
-const listDir = ["Projects", "Resume", "About"];
+const listDir = {
+  "root": ["Projects", "Resume", "About"],
+  "Projects": ["ByteInsight", "QuranApp"]
+};
 
 const Terminal = () => {
   const [command, setCommand] = useState("");
   const [terminalLinesList, setTerminalLinesList] = useState([]);
+  const [dir, setDir] = useState("root");
 
   const handleCommand = (e) => {
     setCommand(e.target.value);
@@ -13,15 +16,34 @@ const Terminal = () => {
 
   const handleEnter = (e) => {
     if (e.key === "Enter") {
+      var currCmd = e.target.value.split(" ")[0];
       setCommand("");
-      if (e.target.value === "ls") {
-        setTerminalLinesList((prevList) => [
-          ...prevList,
-          { command: e.target.value, outputList: listDir },
-        ]);
-      }
-      else if(e.target.value === "clear"){
-        setTerminalLinesList([]);
+      switch (currCmd) {
+        case "ls":
+          setTerminalLinesList((prevList) => [
+            ...prevList,
+            { command: currCmd, outputList: listDir[dir] },
+          ]);
+          break;
+        case "clear":
+          setTerminalLinesList([]);
+          break;
+        case "cd":
+          var paramDir = e.target.value.split(" ")[1];
+          if (paramDir in listDir) {
+            setDir(paramDir);
+            setTerminalLinesList((prevList) => [
+              ...prevList,
+              { command: currCmd + " " + paramDir, outputList: [] },
+            ]);
+          }
+          break;
+        default:
+          setTerminalLinesList((prevList) => [
+            ...prevList,
+            { command: currCmd, outputList: ["\'" + currCmd + "\' is not a valid command"] },
+          ]);
+          break;
       }
     }
   };
@@ -37,7 +59,7 @@ const Terminal = () => {
           </div>
           <div className="terminal-body-line">
             <div className="terminal-body-output">
-              {line["outputList"].map((output) => (
+              {line["outputList"] && line["outputList"].map((output) => (
                 <div>{output}</div>
               ))}
             </div>
