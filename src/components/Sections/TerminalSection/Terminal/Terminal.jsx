@@ -11,6 +11,7 @@ const Terminal = () => {
   const [command, setCommand] = useState("");
   const [terminalLinesList, setTerminalLinesList] = useState([]);
   const [dir, setDir] = useState("root");
+  const [parentDir, setParentDir] = useState(["root"]);
 
   const handleCommand = (e) => {
     setCommand(e.target.value);
@@ -33,10 +34,32 @@ const Terminal = () => {
         case "cd":
           var paramDir = e.target.value.split(" ")[1];
           if (paramDir in listDir) {
+            setParentDir((prevDir) => [...prevDir, dir]);
             setDir(paramDir);
             setTerminalLinesList((prevList) => [
               ...prevList,
               { command: currCmd + " " + paramDir, path: dir, outputList: [] },
+            ]);
+          }
+          else if (paramDir === "..") {
+            var parDir;
+            if (parentDir.length > 1) {
+              parDir = parentDir[parentDir.length - 1];
+              setParentDir((prevDir) => prevDir.slice(0, -1));
+            }
+            else {
+              parDir = "root";
+            }
+            setTerminalLinesList((prevList) => [
+              ...prevList,
+              { command: currCmd + " " + paramDir, path: dir, outputList: [] },
+            ]);
+            setDir(parDir);
+          }
+          else {
+            setTerminalLinesList((prevList) => [
+              ...prevList,
+              { command: currCmd + " " + paramDir, path: dir, outputList: [paramDir + ' is not a valid directory'] },
             ]);
           }
           break;
