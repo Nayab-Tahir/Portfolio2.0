@@ -11,8 +11,8 @@ const AboutSection = () => {
         <div className="about-me-container">
           <h2 className="about-me-title">&lt;about_me&gt;</h2>
           <p className="about-me-intro">
-            ...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-            facilis error ducimus adipisci?
+            ...Driven software engineer and data science enthusiast crafting web
+            magic with React. Up for it?
           </p>
         </div>
       </div>
@@ -20,22 +20,23 @@ const AboutSection = () => {
         <div>
           <div className="about-me-short-desc">
             <h5>
-              ...I have over 12 years of experience in web development, with a
-              strong background in both front-end and back-end technologies;
+              ...Aspiring software engineer adept in C++, Java, Python, React,
+              and data science. Proven project developer, eager collaborator,
+              and lifelong learner;
             </h5>
           </div>
         </div>
         <div>
           <div className="about-me-detailed-desc">
             <p>
-              …curabitur sit amet luctus tortor, sit amet ultrices ante.
-              Maecenas convallis dui arcu, et tempor felis consectetur vel.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia curae; Sed id velit ex. Cras ultricies nisi eget
-              sem mollis, a maximus felis laoreet. Nam eget ultricies urna, vel
-              ullamcorper arcu. Quisque feugiat rhoncus arcu, a tincidunt arcu
-              lacinia ac. Maecenas molestie vel ante in finibus. Sed sit amet
-              ligula eros. In hac habitasse platea dictumst;
+              …I'm an aspiring software engineer with a strong foundation in
+              C++, Java, Python, React, and a deep passion for data science.
+              I've contributed to diverse projects, including a Java-based
+              DocAppointmentPortal, an Android app called QuranApp, and a
+              comprehensive MERN stack project, Tameer.pk, for my final year.
+              I've also enhanced my skills through Coursera courses. I'm a
+              problem solver, creative thinker, and eager collaborator, always
+              seeking new challenges and innovations;
             </p>
           </div>
         </div>
