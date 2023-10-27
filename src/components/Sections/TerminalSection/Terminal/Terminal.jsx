@@ -1,4 +1,6 @@
 import { useState } from "react";
+import TerminalHistory from "./TerminalHistory";
+import TerminalLine from "./TerminalLine";
 
 const listDir = {
   "root": ["Projects", "Resume", "About"],
@@ -57,34 +59,13 @@ const Terminal = () => {
   return (
     <div className="terminal">
       <div className="terminal-head">Terminal</div>
-      {terminalLinesList.map((line) => (
-        <>
-          <div className="terminal-body-line">
-            <div className="terminal-body-title">nayabtahir ~ {line["path"]} %&nbsp;</div>
-            <div className="terminal-executed-command">{line['command']}</div>
-          </div>
-          <div className="terminal-body-line">
-            <div className="terminal-body-output">
-              {line["outputList"] && line["outputList"].map((output) => (
-                <div>{output}</div>
-              ))}
-            </div>
-          </div>
-        </>
-      ))}
-      <div className="terminal-body-line">
-        <div className="terminal-body-title">nayabtahir ~ {dir} %&nbsp;</div>
-        <div className="terminal-body-command-container">
-          <input
-            type="text"
-            name="command"
-            id="command"
-            value={command}
-            onChange={handleCommand}
-            onKeyDown={handleEnter}
-          />
-        </div>
-      </div>
+      <TerminalHistory terminalLinesList={terminalLinesList} />
+      <TerminalLine
+        isActive={true}
+        command={command}
+        handleCommand={handleCommand}
+        handleEnter={handleEnter}
+        dir={dir} />
     </div>
   );
 };
