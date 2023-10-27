@@ -6,7 +6,46 @@
   flex-direction: column;
 }
 
+/* -------------- */
+
 .section {
   text-align: center;
   margin-top: 2%;
 }
+
+/* -------------- */
+
+.head-symbol {
+  margin-bottom: 20px;
+}
+
+.head-symbol > h5 {
+  margin: 0;
+  font-size: 2vw;
+  color: rgb(154, 153, 255);
+}
+
+.head-div {
+  margin-bottom: 20px;
+}
+
+.head-container {
+  padding: 0 32% 3%;
+}
+
+h2.head-title {
+  font-size: 7vw;
+  color: white;
+  margin: 0 0 20px;
+  display: block;
+  line-height: 0.8em;
+}
+
+p.head-intro {
+  margin: 0;
+  color: rgb(230, 219, 116);
+  font-size: 1.29vw;
+
+}
+
+/* --------------- */

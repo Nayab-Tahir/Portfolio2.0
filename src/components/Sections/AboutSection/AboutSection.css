@@ -2,39 +2,6 @@
   margin-top: 0px;
 }
 
-.symbol {
-  margin-bottom: 20px;
-}
-
-.symbol > h5 {
-  margin: 0;
-  font-size: 2vw;
-  color: rgb(154, 153, 255);
-}
-
-.about-me-div {
-  margin-bottom: 20px;
-}
-
-.about-me-container {
-  padding: 0 32% 3%;
-}
-
-h2.about-me-title {
-  font-size: 7vw;
-  color: white;
-  margin: 0 0 20px;
-  display: block;
-  line-height: 0.8em;
-}
-
-p.about-me-intro {
-    margin: 0;
-    color: rgb(230, 219, 116);
-    font-size: 1.29vw;
-
-}
-
 .about-me-desc-container {
   display: flex;
   margin-left: auto;

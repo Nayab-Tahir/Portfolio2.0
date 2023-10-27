@@ -81,7 +81,7 @@ const Terminal = () => {
 
   return (
     <div className="terminal">
-      <div className="terminal-head">Terminal</div>
+      <div className="terminal-head">&lt; Terminal /&gt;</div>
       <TerminalHistory terminalLinesList={terminalLinesList} />
       <TerminalLine
         isActive={true}
