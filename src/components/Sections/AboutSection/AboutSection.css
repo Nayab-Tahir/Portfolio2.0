@@ -40,16 +40,3 @@
   margin-bottom: 1.6em;
   color: #e6db74;
 }
-
-.about-me-btn > a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  background-color: #2fcbef;
-  padding: 20px 40px;
-  font-size: 22px;
-}
-
-.about-me-btn > a:hover{
-  background-color: #9a99ff;
-}
