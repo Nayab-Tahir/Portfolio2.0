@@ -1,12 +1,12 @@
-import useTextAnimation from "../../../Hooks/useTextAnimation";
 import Section from "../../../UI/Section";
 import AnimatedHeading from "../../../UI/AnimatedHeading";
+import useAnimateTextList from "../../../Hooks/useAnimateTextList";
 import "./IntroSection.css";
 
-const careerList = ["_software engineer", "_web developer", "_data scientist"];
+const myCareerList = ["_software engineer", "_web developer", "_data scientist"];
 
 const IntroSection = () => {
-  const career = useTextAnimation(careerList);
+  const career = useAnimateTextList(myCareerList);
 
   return (
     <Section>

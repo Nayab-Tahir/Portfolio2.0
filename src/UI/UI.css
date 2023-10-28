@@ -62,11 +62,11 @@ p.head-intro {
   color: white;
   background-color: #2fcbef;
   padding: 20px 40px;
-  /* font-size: 22px; */
 }
 
 .button > a:hover{
   background-color: #9a99ff;
+  transition: all .2s linear;
 }
 
 

@@ -23,6 +23,7 @@ li {
 
 li:not(.selected):hover{
     color: #9a99ff;
+    transition: all .2s linear;
 }
 
 .selected{
