@@ -1,0 +1,12 @@
+footer{
+  display: flex;
+  justify-content: center;
+  width: 94.2vw;
+  margin: 0 2.9vw;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  /* padding: 30px 10px 30px 70px; */
+}
+
+.footer {
+    padding: 1.8vw 2vw;
+}

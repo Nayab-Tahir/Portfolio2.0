@@ -12,7 +12,9 @@ const Header = () => {
               <div className="career">web_dev</div>
             </div>
           </div>
-          <Navigation />
+          <div className="end">
+            <Navigation />
+          </div>
         </div>
       </div>
     </header>
