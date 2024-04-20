@@ -25,7 +25,7 @@ const Terminal = () => {
         case "ls":
           setTerminalLinesList((prevList) => [
             ...prevList,
-            { command: currCmd, path: dir, outputList: listDir[dir] },
+            { command: currCmd, path: dir, outputList: listDir[dir] ? listDir[dir]:[] },
           ]);
           break;
         case "clear":
@@ -33,7 +33,7 @@ const Terminal = () => {
           break;
         case "cd":
           var paramDir = e.target.value.split(" ")[1];
-          if (paramDir in listDir) {
+          if (listDir[dir] && listDir[dir].includes(paramDir)) {
             setParentDir((prevDir) => [...prevDir, dir]);
             setDir(paramDir);
             setTerminalLinesList((prevList) => [
@@ -50,6 +50,14 @@ const Terminal = () => {
             else {
               parDir = "root";
             }
+            setTerminalLinesList((prevList) => [
+              ...prevList,
+              { command: currCmd + " " + paramDir, path: dir, outputList: [] },
+            ]);
+            setDir(parDir);
+          }
+          else if (paramDir === "/") {
+            parDir = "root";
             setTerminalLinesList((prevList) => [
               ...prevList,
               { command: currCmd + " " + paramDir, path: dir, outputList: [] },

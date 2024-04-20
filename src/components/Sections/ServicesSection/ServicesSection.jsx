@@ -6,9 +6,9 @@ import Button from "../../../UI/Button";
 import "./ServicesSection.css";
 
 const ServicesSection = () => {
-  const service_1 = useAnimateText("_web designer");
-  const service_2 = useAnimateText("_software engineer");
-  const service_3 = useAnimateText("_data scientist");
+  const service_1 = useAnimateText("_data scientist");
+  const service_2 = useAnimateText("_ml engineer");
+  const service_3 = useAnimateText("_ai specialist");
 
   return (
     <Section styleClass="section-none">

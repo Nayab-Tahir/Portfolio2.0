@@ -5,11 +5,11 @@ import "./AboutSection.css";
 
 const introduction = {
   intro:
-    "...Driven software engineer and data science enthusiast crafting web magic with React. Up for it?",
+    "...Passionate data scientist, Python aficionado, unlocking insights to shape the future. Ready to innovate?",
   "short-desc":
-    "...Aspiring software engineer adept in [C++, Java, Python, React, data science].var codeSage = 'Pro_dev' + 'eager_collab' + 'lifelong_learner';",
+    "...Aspiring data scientist adept in [Python, Java, ML, AI]; var codeSage = 'Pro_dev' + 'eager_collab' + 'lifelong_learner';",
   "detailed-desc":
-    "…I'm an aspiring software engineer with a strong foundation in C++, Java, Python, React, and a deep passion for data science. I've contributed to diverse projects, including a Java-based DocAppointmentPortal, an Android app called QuranApp, and a comprehensive MERN stack project, Tameer.pk, for my final year. I've enhanced my skills through Coursera. I'm a problem solver, creative thinker, and eager collaborator, always seeking innovations;",
+    "...As an aspiring data scientist, I possess advanced skills in Python, SQL, and TensorFlow, specializing in machine learning and deep learning techniques. My experience includes implementing neural networks and convolutional neural networks for image recognition tasks. I am driven by a passion for extracting meaningful insights from complex datasets and am eager to contribute to projects at the forefront of AI innovation;",
 };
 
 const AboutSection = () => {
